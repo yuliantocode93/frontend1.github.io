@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback</title>
+</head>
+
+<body>
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+    <script>
+        // function tampilkanPesan (Callback) {
+        //     const nama = prompt('masukan nama :');
+        //     Callback(nama);
+        // }
+
+        // tampilkanPesan(nama => alert(`halo, ${nama}`));
+
+
+
+        // const mhs = [
+        //     {
+        //         "nama": "Mamad",
+        //         "nrp": "04304003",
+        //         "email": "mamad@gmail.com",
+        //         "jurusan": "Teknik ",
+        //         "idDosenWali": 1
+        //     },
+        //     {
+        //         "nama": "Putri Sulistia",
+        //         "nrp": "012040123",
+        //         "email": "putri@gmail.com",
+        //         "jurusan": "Teknik",
+        //         "idDosenWali": 2
+        //     },
+        //     {
+        //         "nama": "Kartika Dayati",
+        //         "nrp": "034028999",
+        //         "email": "kartika@gmail.com",
+        //         "jurusan": "Teknik",
+        //         "idDosenWali": 1
+        //     }
+
+        // ];
+
+        // console.log('mulai');
+        // mhs.forEach(m => console.log(m.nama));
+        // console.log('selesai');
+
+
+        // Asynchronous Callback
+        // function getDataMahasiswa(url, success, error) {
+        //     let xhr = new XMLHttpRequest();
+
+        //     xhr.onreadystatechange = function () {
+        //         if (xhr.readyState === 4) {
+        //             if (xhr.status === 200) {
+        //                 success(xhr.response);
+        //             } else if (xhr.status === 404 ) {
+        //                 error ();
+        //             }
+        //         }
+        //     }
+
+        //     xhr.open('get', url);
+        //     xhr.send();
+        // }
+        // console.log('mulai');
+        // getDataMahasiswa('data/mahasiswa.json', results => {
+        //     const mhs = JSON.parse(results);
+        //     mhs.forEach(m => console.log(m.nama));
+        // }, () => {
+
+        // });
+        // console.log('selesai');
+
+
+        // JQuery
+        console.log('mulai');
+        $.ajax({
+            url: 'data/mahasiswa.json',
+            success: (mhs) => {
+                mhs.forEach(m => console.log(m.nama));
+            },
+            error: (e) => {
+                console.log(e.responseText);
+            }
+        });
+        console.log('selesai');
+
+
+
+
+    </script>
+</body>
+
+</html>

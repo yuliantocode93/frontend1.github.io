@@ -1,0 +1,24 @@
+const mhs = [
+{
+    "nama": "Mamad",
+    "nrp": "04304003",
+    "email": "mamad@gmail.com",
+    "jurusan": "Teknik ",
+    "idDosenWali": 1
+},
+{
+    "nama": "Putri Sulistia",
+    "nrp": "012040123",
+    "email": "putri@gmail.com",
+    "jurusan": "Teknik",
+    "idDosenWali": 2
+},
+{
+    "nama": "Kartika Dayati",
+    "nrp": "034028999",
+    "email": "kartika@gmail.com",
+    "jurusan": "Teknik",
+    "idDosenWali": 1
+}
+
+];

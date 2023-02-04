@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+
+// creation phase pada Global Context
+// nama var = undefined
+// nama function = fn()
+// hoisting
+// window = global scope
+// this = window
+
+// execution phase
+
+    // console.log(helloEcho());
+
+    // var nama = 'ssss';
+    // var umur = 29;
+
+    // function helloEcho() {
+    //     console.log(`Halo, nama saya ${nama}, saya ${umur} tahun`);
+    // }
+
+
+
+
+
+    // function membuat local execution context
+    // yang di dalamnya terdapat creation dan execution phase
+    // window
+    // arguments
+    // hoisting
+
+
+    // var nama = "Julian Kim";
+    // var username = "@juliankim";
+
+    // function cetakURL() {
+    //     var instagramURL = "https://instagram.com/";
+    //     return instagramURL + username;
+    // }
+
+    // console.log(cetakURL('@echo123', "@echoABC"));
+
+
+
+
+
+    // HOISTING ABC 
+
+    // function a() {
+    //     console.log('ini A');
+
+    //     function b() {
+    //         console.log('ini B');
+
+    //         function c() {
+    //             console.log('ini C');
+    //         }
+
+    //         c();
+    //     }
+
+    //     b();
+    // }
+
+    // a();
+
+    function satu() {
+        var nama = "echo 1";
+        console.log(nama);
+    }
+
+    function dua() {
+        console.log(nama);
+    }
+
+    console.log(nama);
+    var nama = "echo2"; // global
+
+    satu();// echo 1
+    dua('muncul');// echo 2  // global
+    console.log(nama);// echo 2  // global
+   
+
+</script>
+</body>
+</html>
