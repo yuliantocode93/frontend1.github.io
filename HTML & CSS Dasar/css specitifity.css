@@ -1,0 +1,13 @@
+#p1 {
+    color: orange;
+}
+/*contoh yang kedua*/
+ul#sarapan li {
+    color: red;
+}
+.favorite {
+    color: pink;
+}
+ul#sarapan li.favorit {
+    color: pink;
+}
