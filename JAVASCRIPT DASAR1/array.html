@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAY METHOD</title>
+</head>
+<body>
+    <script>
+
+
+// MANIPULASI ARRAY
+
+// 1. MENAMBAH ISI ARRAY
+// var arr = [];
+// arr[0] = 'kwon';
+// arr[1] = 'yuli';
+// arr[2] = 'juli';
+// arr[6] = 'anto';
+
+// console.log(arr);
+
+// 2. MENGHAPUS ISI ARRAY
+// var arr = ['kwon', 'yuli', 'juli'];
+// arr[1] = undefined;
+// console.log(arr)
+
+
+// 3.MENAMBAH ISI ARRAY
+// var arr = [' kwon', ' yuli', ' nofa'];
+
+// for(var i = 0; i < arr.length; i++){
+//     console.log('mahasiswa ke- ' + (i+1) + arr[i]);
+// }
+
+
+// METHOD PADA ARRAY
+// 1. JOIN 
+// var arr = ['kwon', 'yuli', 'juli'];
+// console.log(arr.join(' - '));
+
+// 2. PUSH & POP
+    // var arr = ['kwon', 'yuli', 'juli'];
+    // arr.push('didi');
+    // arr.pop();
+    // arr.pop();
+    // console.log(arr.join(' - '));
+
+// 3. UNSHIFT (menggeser kedalam) & SHIFT (menggeser keluar)
+    // var arr = ['kwon', 'yuli', 'juli'];
+    // arr.unshift('yuli'); // menambah
+    // arr.shift(); // mengurangi
+    // console.log(arr.join(' - '));
+
+// 4. SPLICE
+// SPLICE(indexAwal, mauDihapusBerapa, alemenBaru1, elemenBaru2, ...)
+    // var arr = ['kwon', 'yuli', 'juli'];
+    // arr.splice(1, 2, 'dodo', 'didi');
+    // console.log(arr.join(' - '));
+
+// 5. SLICE
+// slice(awal, akhir);
+    // var arr = ['kwon', 'yuli', 'juli', 'didi', 'sisi'];
+    // var arr2 = arr.slice(1,4);
+    // console.log(arr.join(' - ')); // semua
+    // console.log(arr2.join( ' - '));// yuli, juli, didi
+
+// 6. FOREACH
+    // var angka = [1,2,3,4,5,6,7,8];
+    // var nama = ['kwon', 'yuli', 'juli', 'didi', 'sisi'];
+// for( var i = 0; i < angka.length; i++) {
+//     console.log(angka[i]);
+// }
+// angka.forEach(function(e){
+//     console.log(e)
+// });
+
+// nama.forEach(function(e,i) {
+//     console.log('Mahasiswa ke-' + (i+1) + ' adalah : ' + e);
+// });
+
+// 7. MAP
+    // var angka = [1, 2, 3, 4, 5, 6, 7, 8];
+    // var angka2 = angka.map(function(e) {
+    //     return e * 2; // 2,4,6,8,10,12,14,16
+    // });
+
+    // console.log(angka2.join(' - '));
+
+// 8. SORT
+    // var angka = [1,10,20,2,5,3,6,8,4];
+    // angka.sort(function(a,b){
+    //     return a-b;
+    // });
+    // console.log(angka.join(' - '));
+
+// 9. FILTER
+    var angka = [1, 10, 20, 2, 5, 3, 6, 8, 4];
+    var angka2 = angka.filter(function(x){
+        return x > 5;
+    });
+    console.log(angka2.join(' - '));
+
+// 10 FIND
+    var angka = [1, 10, 20, 2, 5, 3, 6, 8, 4];
+    var angka2 = angka.find(function (x) {
+        return x > 5;
+    });
+    console.log(angka2);
+
+
+
+
+    </script>
+</body>
+</html>

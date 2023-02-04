@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>OBJECT : THIS</h1>
+   <script>
+
+// THIS
+
+
+
+        // MEMBUAT OBJECT CARA 1
+        // function halo () {
+        //     console.log( this );
+        //     console.log('halo');
+        // }
+        // this.halo();
+        // this mengembalikan object global
+
+
+
+        // CARA 2 - OBJECT LITERAL
+        // var obj = {a : 19, nama : 'basing'};
+        // obj.halo = function() {
+        //     console.log(this);
+        //     console.log('halo');
+        // }
+        // obj.halo();
+        // this mengembalikan object yang bersangkutan
+
+
+
+        // CARA 3 - CONSTRUCTOR
+        function Halo() {
+            console.log(this);
+            console.log('halo');
+        }
+        new Halo();
+        var obj1 = new Halo();
+        // this mengembalikan object yang baru dibuat
+   </script> 
+</body>
+</html>

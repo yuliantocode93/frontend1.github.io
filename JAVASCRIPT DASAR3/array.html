@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Manipulasi Array
+
+        // 1. Menambah isi Array
+        // let arr = [];
+        // arr[0] = "acho";
+        // arr[1] = "echo1";
+
+        // console.log(arr);
+
+
+
+        // 2. Menghapus isi Array
+        // let arr = ["aco", "echo"];
+        // arr[0] = undefined;
+        // console.log(arr);
+
+
+
+        // 3. Menampilkan isi Array
+        // let arr = ["acho", "echo"];
+        // for (let i = 0; i < 2 ; i++) {
+        //     console.log('mahasiswa ke- ' + (i+1) + ':' + arr[i]);
+        // }
+
+
+
+
+
+
+
+
+        // METHOD PADA ARRAY
+
+        // 1. Join
+        // console.log(arr.join('-'));
+
+        // 2. push & pop
+        // arr.push("sisi");
+        // arr.pop();
+        // console.log(arr.join(' - '))
+
+
+        // 3. unshift & shift
+        // arr.unshift("sisi");
+        // arr.shift()
+        // console.log(arr.join(" - "));
+
+
+        // 4. splice
+        // Splice(indexAwal, mauDihapusBerapa,elemenBaru1, elemenBaru2, ...)
+        // arr.splice(0, 1, "sisi", "susan");
+        // console.log(arr.join(' - '));
+
+        // let arr = ["acho", "echo","soca"];
+        // 5. slice
+        // let arr2 = arr.slice(0,2);
+        // console.log(arr.join(' - '));
+        // console.log(arr2.join(' - '));
+
+
+        // 6. foreach
+        // let angka = [1,2,3,4,5,6,7,8];
+        // let nama = ["sisi", "soca", "silica"];
+
+        // let cetak = function (e) {
+        //         console.log(e);
+        // }
+        // angka.forEach(cetak);
+
+        // nama.forEach(function(e,i){
+        //     console.log("mahasiswa ke- " + (i+1) + " adalah : " + e);
+        // });
+
+
+        // 7. Map
+        // let angka = [1,2,5,4,7,6,9,8];
+        // let angka2 = angka.map(function(e){
+        //     return e * 2;
+        // });
+        // console.log(angka2.join(" - "));
+
+
+        // 8. sort
+        //  let angka = [1, 2,10, 20, 5, 4, 7, 6, 9, 8, 3];
+        //  angka.sort(function(a,b){
+        //     return a-b;
+        //  });
+        //  console.log(angka.join(' - '));
+
+
+        // 9. filter
+        // let angka = [1, 2, 10, 20, 5, 4, 7, 6, 9, 8, 3];
+        // let angka2 = angka.filter(function(x){
+        //     return x > 10;
+        // });
+        // console.log(angka2.join(" - "));
+
+
+
+        // 10. find
+        let angka = [1, 2, 10, 20, 5, 4, 7, 6, 9, 8, 3];
+        let angka2 = angka.find(function (x) {
+            return x > 1;
+        });
+        console.log(angka2);
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

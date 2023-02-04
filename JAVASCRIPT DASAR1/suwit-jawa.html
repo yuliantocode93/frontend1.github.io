@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>suwit jawa</h1>
+
+    <script>
+      let tanya = true;
+      while (tanya) {
+        // menangkap pilihan player
+        let p = prompt("pilih: gajah, semut, orang");
+
+        // menangkap pilihan komputer
+        // membangkitkan bilangan random
+        let com = Math.random();
+
+        if (com < 0.34) {
+          com = "gajah";
+        } else if (com >= 0.34 && com < 0.67) {
+          com = "orang";
+        } else {
+          com = "semut";
+        }
+
+        let hasil = "";
+        // menentukan rules
+        if (p == com) {
+          hasil = "SERI!";
+        } else if (p == "gajah") {
+          hasil = com == "" ? "MENANG!" : "KALAH!";
+        } else if (p == "orang") {
+          hasil = com == "" ? "MENANG!" : "KALAH!";
+        } else if (p == "semut") {
+          hasil = com == "" ? "MENANG!" : "KALAH!";
+        } else {
+          hasil = "Anda memasukan pilihan yang salah";
+        }
+        // tampilkan hasilnya
+        alert(
+          "kamu memilih : " +
+            p +
+            " dan komputer memilih : " +
+            com +
+            "\n Maka hasilnya : kamu " +
+            hasil
+        );
+
+        tanya = confirm("Lagi tidak?");
+      }
+      alert("terima kasih sudah bermain😂");
+    </script>
+  </body>
+</html>

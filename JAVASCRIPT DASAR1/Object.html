@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ // MEMBUAT OBJECT
+ // OBJECT LITERAL
+
+    //  var mhs = {
+    //     nama : "kwon yuli",
+    //     umur : 29,
+    //     ips : [3.00, 2.50, 3.20],
+    //     alamat : {
+    //         jalan : "jl. abc",
+    //         kota : 'bandar lampung',
+    //         provinsi : 'lampung'
+    //     }
+    //  };
+
+// FUNCTION DECLARATION
+function buatObjectMahasiswa(nama, nrp, email, jurusan){
+    var mhs = {};
+    mhs.nama = nama;
+    mhs.nrp = nrp;
+    mhs.email = email;
+    mhs.jurusan = jurusan;
+
+    return mhs;
+}
+
+var mhs3 = buatObjectMahasiswa ('kwon yuli', '09897896', 'kwon@gmail.com', 'teknik')
+
+
+// CONSTRUCTOR
+function Mahasiswa(nama, nrp, jurusan) {
+    this.nama = nama;
+    this.nrp = nrp;
+    this.jurusan = jurusan;
+}
+
+var mhs4 = new Mahasiswa('summi', '08970907', 'komputer');
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+
+    <script>
+// MEMBUAT FUNCTION 
+
+// function jumlahVolumeKubus(a, b) {
+//     var volumeA;
+//     var volumeB;
+//     var total;
+
+//     volumeA = a * a * a;
+//     volumeB = b * b * b;
+
+//     total = volumeA + volumeB;
+
+//     return total;
+// }
+
+// document.writeln(jumlahVolumeKubus(4, 6));
+
+
+
+// PARAMETER DAN ARGUMENT
+
+// function tambah(a,b) {
+//     return a + b;
+// }
+
+// var a = parseInt(prompt('masukan nilai 1 :'));
+// var b = parseInt(prompt('masukan nilai 2 :'));
+// var hasil = tambah(a,b);
+
+// alert(hasil);
+
+
+
+
+
+
+// MEMBUAT DAN MENJALANKAN FUCNTION
+
+// function jumlahVolumeKubus(a, b) {
+//     var volumeA;
+//     var volumeB;
+//     var total;
+
+//     volumeA = a * a * a;
+//     volumeB = b * b * b;
+
+//     total = volumeA + volumeB;
+
+//     return total;
+// }
+
+// alert('bagian A adalah :  ' + jumlahVolumeKubus(2, 3));
+// alert('dan bagian B adalah :  ' + jumlahVolumeKubus(2, 3));
+
+
+
+// REFACTORING
+
+
+// function jumlahVolumeKubus(a,b){
+//     return a * a * a + b * b * b;
+// }
+// alert(jumlahVolumeKubus(2,3));// 8 + 27 = 35
+
+
+
+
+// PARAMETER 
+
+
+// function tambah(a,b) {
+//     return a + b;
+// }
+
+// function kali (a,b) {
+//     return a * b;
+// }
+
+// // var a = parseInt(prompt('masukan nilai 1'));
+// // var b = parseInt(prompt('masukan nilai 2'))
+// // var hasil = tambah(a, b);
+// // alert(hasil);
+
+// var hasil = kali(tambah(1,2), tambah(3,4))// 3 + 7 = 21
+// alert(hasil);
+
+
+
+// ARGUMENTS
+
+// function tambah() {
+//     var hasil = 0;
+//     for( var i = 0; i < arguments.length; i++) {
+//         hasil += arguments[i];
+//     }
+//     return hasil;
+// }
+
+// var coba = tambah(1,2,3);
+// alert(coba);
+
+
+
+
+// GLOBAL SCOPE/ WINDOW SCOPE
+
+// var a = 1;
+// function tes () {
+//     var b = 2;
+//     console.log(a)
+// }
+// tes();
+
+
+
+
+// REKURSIF
+
+function tampilAngka(n) {
+    if(n === 0) return;
+    console.log(n);
+    return tampilAngka(n-1)
+}
+
+tampilAngka(10);
+
+
+    </script>
+</body>
+</html>

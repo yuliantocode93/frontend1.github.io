@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // Membuat object
+  
+
+    // let mhs = {
+    //     nama : "koko",
+    //     umur : 29,
+    //     ip : [1.22,3.44,4.00],
+    //     alamat : {
+    //         jalan : "jl. abc ",
+    //         no : "ke hatimu",
+    //         kota : "ke jiwamu"
+    //     }
+    // };
+
+
+
+
+      // Object Literal
+        let mhs = {
+            nama: "koko",
+            nrp: '087756464',
+            email: 'kokko@gmail.com'
+        }
+
+    // Function Declaration
+    function buatObjectMahasiswa(nama, nrp, email) {
+        let mhs = {};
+        mhs.nama = nama;
+        mhs.nrp = nrp;
+        mhs.email = email;
+        return mhs;
+    }
+
+    let mhs1 = buatObjectMahasiswa('sisi', '899698', 'sisi@gmail.com');
+
+
+
+    // Constructor
+    function Mahasiswa(nama, nrp, email) {
+        this.nama = nama;
+        this.nrp = nrp;
+        this.email = email;
+    }
+
+    let mhs2 = new Mahasiswa('sister', '787657', 'sister@gmail.com');
+
+    
+</script>
+</body>
+</html>
